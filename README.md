@@ -11,6 +11,41 @@ It is the successor of
 and [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark/).
 It supports a number of computer vision research projects and production applications in Facebook.
 
+## Masterclass Companion
+
+This checkout accompanies the instance-segmentation and Detectron2 installation section of the
+[YOLO Masterclass: Deep Learning for Computer Vision](https://www.udemy.com/course/yolo-masterclass-deep-learning-computer-vision-course/).
+The codebase is the Detectron2 project, sourced from the
+[pHidayatullah/detectron2 fork](https://github.com/pHidayatullah/detectron2), and is not a
+course-authored implementation. The upstream project is maintained at
+[facebookresearch/detectron2](https://github.com/facebookresearch/detectron2).
+
+## Installation
+
+Detectron2 builds native C++ extensions and its PyTorch and torchvision versions must match.
+Follow the [official installation guide](https://detectron2.readthedocs.io/tutorials/install.html)
+for platform-specific prerequisites. The upstream guide targets Linux and macOS; Windows support
+is not provided by the official installation instructions.
+
+1. Install a compatible PyTorch and torchvision pair using the selector at
+   [pytorch.org](https://pytorch.org/).
+2. Install the Python dependencies and this checkout:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   python -m pip install -e .
+   ```
+
+3. Check the installation:
+
+   ```bash
+   python -c "import detectron2; print(detectron2.__version__)"
+   ```
+
+For a quick inference example, see [Getting Started](GETTING_STARTED.md) and the
+[Detectron2 demo](demo/README.md). Pre-trained model weights are downloaded separately from the
+[Detectron2 Model Zoo](MODEL_ZOO.md); they are not included in this repository.
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/1381301/66535560-d3422200-eace-11e9-9123-5535d469db19.png"/>
 </div>
@@ -31,10 +66,6 @@ Explain Like I’m 5: Detectron2            |  Using Machine Learning with Detec
 
 See our [blog post](https://ai.facebook.com/blog/-detectron2-a-pytorch-based-modular-object-detection-library-/)
 to see more demos and learn about detectron2.
-
-## Installation
-
-See [installation instructions](https://detectron2.readthedocs.io/tutorials/install.html).
 
 ## Getting Started
 

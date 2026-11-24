@@ -44,6 +44,13 @@ model_ts*.txt
 .vscode
 _darcs
 
+# local environments and generated files
+.venv/
+venv/
+.env
+build.log
+requirements.text
+
 # project dirs
 /detectron2/model_zoo/configs
 /datasets/*
