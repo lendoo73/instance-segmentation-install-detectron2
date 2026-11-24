@@ -48,6 +48,7 @@ _darcs
 .venv/
 venv/
 .env
+secrets.md
 build.log
 requirements.text
 
